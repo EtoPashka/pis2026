@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Журнал переговоров</title>
+    <link rel="stylesheet" href="{{ STATIC_URL }}/static/css/call.css">
+</head>
+<body>
+    <div class="header">
+        <img src="{{ STATIC_URL }}/static/img/logo.png">
+        {% if user.is_anonymous %}
+            <div class="auth-links">
+                <a href="/register/" class="all-articles">Регистрация</a>
+                <a href="/login/" class="all-articles">Вход</a>
+            </div>
+        {% endif %}
+        {% if not user.is_anonymous %}
+            <a href="/call/new/" class="all-articles">Добавить запись</a>
+        {% endif %}
+    </div>
+    <div class="archive">
+        {% for call in calls %}
+        <div class="one-post">
+            <h2 class="post-title">
+                <a href="/call/{{ call.id }}">{{ call.city }}</a>
+            </h2>
+            <div class="article-info">
+                <div class="article-author">{{ call.subscriber.username }}</div>
+                <div class="article-created-date">{{ call.call_date }}</div>
+            </div>
+            <p class="article-text">{{ call.get_excerpt }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

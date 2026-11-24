@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Учёт переговоров — регистрация</title>
+    <link rel="stylesheet" href="{{ STATIC_URL }}/static/css/call.css">
+</head>
+<body class="auth-page">
+    <div class="header">
+        <img src="{{ STATIC_URL }}/static/img/logo.png" />
+        <a href="/" class="all-articles">Все записи</a>
+    </div>
+    <div class="content">
+        <h1>Регистрация</h1>
+        <form method="POST">{% csrf_token %}
+            <input type="text" name="username" placeholder="Логин" value="{{ form.username|default:'' }}">
+            <input type="email" name="email" placeholder="Email" value="{{ form.email|default:'' }}">
+            <input type="password" name="password" placeholder="Пароль">
+            <input type="submit" value="Зарегистрироваться">
+        </form>
+        {% if form.errors %}
+            <div class="form-errors">{{ form.errors }}</div>
+        {% endif %}
+        <p class="auth-switch">Уже есть аккаунт? <a href="/login/">Войти</a></p>
+    </div>
+</body>
+</html>

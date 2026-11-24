@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ call.city }}</title>
+    <link rel="stylesheet" href="{{ STATIC_URL }}/static/css/call.css">
+</head>
+<body class="article">
+    <div class="header">
+        <img src="{{ STATIC_URL }}/static/img/logo.png">
+        <a href="/" class="all-articles">Все записи</a>
+    </div>
+    <div class="article-content">
+        <h1>{{ call.city }}</h1>
+        <div class="article-info">
+            <div class="article-author">{{ call.subscriber.username }}</div>
+            <div class="article-created-date">{{ call.call_date }}</div>
+        </div>
+        <p class="article-text">{{ call.details }}</p>
+    </div>
+</body>
+</html>
+

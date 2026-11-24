@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Журнал переговоров</title>
+</head>
+<body>
+    <div class="header">
+        <img src="{{ STATIC_URL }}/static/img/logo.png">
+    </div>
+    <div class="archive">
+        {% for call in calls %}
+        <div class="one-post">
+            <h2 class="post-title">{{ call.city }}</h2>
+            <div class="article-info">
+                <div class="article-author">{{ call.subscriber.username }}</div>
+                <div class="article-created-date">{{ call.call_date }}</div>
+            </div>
+            <p class="article-text">{{ call.get_excerpt }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,212 @@
+body {
+    background: #1abc9c;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #ffffff;
+}
+
+.header img {
+    display: block;
+    width: 318px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header .all-articles {
+    float: right;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.archive {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-title a {
+    color: #ffffff;
+}
+
+.article-author {
+    width: 50%;
+    float: left;
+    font-weight: bold;
+}
+
+.article-created-date {
+    text-align: right;
+    font-style: italic;
+}
+
+.one-post {
+    margin-bottom: 40px;
+}
+
+.article-text {
+    padding-top: 10px;
+}
+
+.article .header {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.article .header img {
+    width: 318px;
+    float: left;
+}
+
+.article .header .all-articles {
+    float: right;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.article-content {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.create-post .header {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.create-post .header img {
+    width: 318px;
+    float: left;
+}
+
+.create-post .header .all-articles {
+    float: right;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.create-post .content {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.create-post input[type="text"],
+.create-post textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 15px;
+    border: none;
+    border-radius: 3px;
+}
+
+.create-post textarea {
+    height: 160px;
+    resize: vertical;
+}
+
+.create-post input[type="submit"] {
+    padding: 10px 24px;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    background: #ffffff;
+    color: #1abc9c;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.create-post .form-errors {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #fff3cd;
+}
+
+.auth-links {
+    float: right;
+    margin-top: 25px;
+}
+
+.auth-links .all-articles {
+    float: none;
+    margin-top: 0;
+    margin-left: 15px;
+}
+
+.back-link {
+    clear: both;
+    margin-top: 10px;
+}
+
+.auth-page .header {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.auth-page .header img {
+    width: 318px;
+    float: left;
+}
+
+.auth-page .content {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.auth-page input[type="text"],
+.auth-page input[type="email"],
+.auth-page input[type="password"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 15px;
+    border: none;
+    border-radius: 3px;
+}
+
+.auth-page input[type="submit"] {
+    padding: 10px 24px;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    background: #ffffff;
+    color: #1abc9c;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.auth-page .form-errors {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #fff3cd;
+}
+
+.auth-switch {
+    margin-top: 20px;
+}
+
+.auth-switch a {
+    color: #ffffff;
+    font-weight: bold;
+}
